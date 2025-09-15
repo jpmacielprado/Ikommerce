@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Notebook Gamer",
+      "price": 4500,
+      "oldPrice": 5000,
+      "discount": 10,
+      "image": "https://m.media-amazon.com/images/I/51Wv-tEUn6L._AC_SX679_.jpg",
+      "seller": "TechStore"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone X",
+      "price": 2200,
+      "oldPrice": 2500,
+      "discount": 12,
+      "image": "https://d3qoj2c6mu9s8x.cloudfront.net/Custom/Content/Products/40/06/4006975_smartphone-apple-iphone-x-5-8-camera-12mp-dual-frontal-7mp-com-ios-11-prata-256gb_m2_637223855454369999.webp",
+      "seller": "PhoneShop"
+    },
+    {
+      "id": 3,
+      "name": "Fone de Ouvido Bluetooth",
+      "price": 150,
+      "oldPrice": 200,
+      "discount": 25,
+      "image": "https://m.media-amazon.com/images/I/51olNZRjn+L._AC_SY300_SX300_.jpg",
+      "seller": "SoundPlus"
+    }
+  ]
+}

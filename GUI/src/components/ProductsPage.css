@@ -1,0 +1,14 @@
+.products-page{
+    padding: 20px;
+}
+
+.products-page h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.products-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
