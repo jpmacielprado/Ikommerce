@@ -6,7 +6,7 @@ import { useState } from "react";
 
 
 const Header: FC = () => {
-  // state da busca
+  // state da busca. Substituir isso depois pelo java samu 
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
 

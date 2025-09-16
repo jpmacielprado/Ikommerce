@@ -7,6 +7,9 @@
       "oldPrice": 5000,
       "discount": 10,
       "image": "https://m.media-amazon.com/images/I/51Wv-tEUn6L._AC_SX679_.jpg",
+      "images":[
+        "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages5.kabum.com.br%2Fprodutos%2Ffotos%2F617805%2Fnotebook-gamer-acer-nitro-v15-intel-core-i7-13620h-16gb-ram-rtx-3050-ssd-512gb-15-6-full-hd-ips-144hz-linux-preto-anv15-51-73e9_1722888804_gg.jpg&w=1920&q=75"
+        ],
       "seller": "TechStore"
     },
     {
@@ -16,6 +19,9 @@
       "oldPrice": 2500,
       "discount": 12,
       "image": "https://d3qoj2c6mu9s8x.cloudfront.net/Custom/Content/Products/40/06/4006975_smartphone-apple-iphone-x-5-8-camera-12mp-dual-frontal-7mp-com-ios-11-prata-256gb_m2_637223855454369999.webp",
+      "images":[
+        "https://cdn.awsli.com.br/600x700/35/35541/produto/15356101702dc988468.jpg"
+      ],
       "seller": "PhoneShop"
     },
     {

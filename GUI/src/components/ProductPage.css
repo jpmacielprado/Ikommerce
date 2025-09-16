@@ -1,9 +1,10 @@
 .product-page {
   display: flex;
-  gap: 40px;
-  padding: 40px;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 50px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto ;
   font-family: Arial, sans-serif;
 }
 
@@ -11,13 +12,15 @@
 .gallery {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 15px;
 }
 
 .gallery .main-image {
-  max-width: 100%;
-  max-height: 500px;
+  width: 100%;
+  height: 350px;
   border-radius: 10px;
   object-fit: contain;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -126,4 +129,84 @@
 
 .frete button:hover {
   background: #cc4c00;
+}
+
+.breadcrumb {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 15px;
+
+}
+
+.breadcrumb a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+
+}
+
+.breadcrumb :current {
+  font-weight: bold;
+  color: #000;
+}
+.image-gallery {
+  display: flex;
+  gap: 16px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: border 0.2s;
+}
+
+.thumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.thumb.active {
+  border: 2px solid orange;
+}
+
+.more {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: contain;
 }
