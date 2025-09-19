@@ -3,6 +3,8 @@
     {"idCategory": 1, "nameCategory": "Todos os Produtos"},
     {"idCategory": 2, "nameCategory": "Notebooks"},
     {"idCategory": 3, "nameCategory": "Smartphones"},
+    {"idCategory": 4, "nameCategory": "Periféricos"},
+    {"idCategory": 4, "nameCategory": "Periféricos"},
     {"idCategory": 4, "nameCategory": "Periféricos"}
   ],
   "products": [
