@@ -139,12 +139,12 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: white;
+    background: rgb(248, 247, 247);
     color: #000;
-    min-width: 300px;
+    min-width: 180px;
     max-width: 300px;
     box-shadow: 1px 4px 8px rgb(0,0,0, 0.15);
-    border-radius: 6px;
+    border-radius: 3px;
     z-index: 200;
     padding: 0;
     margin: 8px 0 0 0;

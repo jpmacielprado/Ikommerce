@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import ErrorBoundary from "./components/Error.Boundary";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
+import Footer from "./components/Footer";
+
 
 const App: React.FC = () => {
   return (
@@ -20,6 +22,7 @@ const App: React.FC = () => {
           <Route path="/login" element={<LoginForm />} />
           <Route path="/cadastro" element={<RegisterForm />} />
         </Routes>
+        <Footer />
       </Router>
     </ErrorBoundary>
   );

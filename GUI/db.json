@@ -40,6 +40,15 @@
       "discount": 25,
       "image": "https://m.media-amazon.com/images/I/51olNZRjn+L._AC_SY300_SX300_.jpg",
       "seller": "SoundPlus"
+    },
+    {
+      "id": 4,
+      "name": "Jogo Battlefield 6 PS5",
+      "price": 351.47,
+      "oldPrice": 7,
+      "discount": 25,
+      "image": "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages9.kabum.com.br%2Fprodutos%2Ffotos%2F926599%2Fjogo-battlefield-6-ps5-ea000014ps5_1758056741_gg.jpg&w=640&q=75",
+      "seller": "KaBuM!"
     }
   ]
 }
