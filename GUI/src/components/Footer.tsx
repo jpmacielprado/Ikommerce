@@ -11,7 +11,7 @@ const Footer: FC = () => {
                 {/*logo */}
                 <Link to="/">
                     <div className="logo">
-                        <img src="iko.png" alt="Logo" className="logo" />
+                        <img src="/iko.png" alt="Logo" className="logo" />
                     </div>
                 </Link>
 
@@ -52,10 +52,10 @@ const Footer: FC = () => {
                     <div>
                         <h2 className="footer-title">Formas de Pagamentos</h2>
                         <div className="payment-icons">
-                            <img src="boleto.png" alt="Boleto" />
-                            <img src="pix.png" alt="Pix" />
-                            <img src="visa.png" alt="Visa" />
-                            <img src="mastercard.png" alt="MasterCard" />
+                            <img src="/boleto.png" alt="Boleto" />
+                            <img src="/pix.png" alt="Pix" />
+                            <img src="/visa.png" alt="Visa" />
+                            <img src="/mastercard.png" alt="MasterCard" />
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@ const Footer: FC = () => {
                     <div>
                         <h2 className="footer-title">Segurança</h2>
                         <div className="security-icons">
-                            <Link to="forma-pagamento"><img src="google.png" alt="google" /></Link>
+                            <Link to="forma-pagamento"><img src="/google.png" alt="google" /></Link>
                         </div>
                     </div>
                 </div>
