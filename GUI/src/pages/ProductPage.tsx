@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 interface Product {
   id: number;
   name: string;
+  displayPrice: string | null;
   price: number;
+  displayOldPrice: string | null;
   oldPrice: number;
   discount: number;
   image: string;
@@ -29,7 +31,20 @@ function ProductPage() {
       api
         .get<Product>(`products/${id}`)
         .then((res) => {
-          setProduct(res.data);
+          const data: Product = res.data;
+          const formattedProduct = {
+            ...data,
+            displayPrice: new Intl.NumberFormat("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            }).format(data.price),
+
+            displayOldPrice: new Intl.NumberFormat("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            }).format(data.oldPrice),
+          };
+          setProduct(formattedProduct);
 
           // sempre começa pela capa
           setSelectedImage(res.data.image);
@@ -102,8 +117,8 @@ function ProductPage() {
       </div>
       <div className="detils">
         <h1>{product.name}</h1>
-        <p className="old-price">De: R${product.oldPrice.toFixed(2)}</p>
-        <h2 className="price">Por: R${product.price.toFixed(2)}</h2>
+        <p className="old-price">De: R${product.displayOldPrice}</p>
+        <h2 className="price">Por: R${product.displayPrice}</h2>
         <span className="discount">-{product.discount}%</span>
         <p className="seller">Fornecedor: {product.seller}</p>
         <button className="buy-btn">Comprar 🛒</button>
