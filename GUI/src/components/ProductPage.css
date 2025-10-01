@@ -90,12 +90,14 @@
 }
 
 .cart-btn {
-  background: #1d1d2b;
-  color: white;
+  background: #ffffff;
+  color: #e65500;;
+  border: 3px solid  #cc4c00;
+  
 }
 
 .cart-btn:hover {
-  background: #33334d;
+  background:whitesmoke;
 }
 
 /* Frete */

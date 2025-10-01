@@ -4,6 +4,7 @@ import api from "../services/api";
 import axios from "axios";
 import "../components/ProductPage.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 interface Product {
   id: number;
@@ -25,6 +26,8 @@ function ProductPage() {
   const [cep, setCep] = useState("");
   const [frete, setFrete] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string>("");
+  const { addToCart } = useCart();
+  
 
   useEffect(() => {
     if (id) {
@@ -122,7 +125,7 @@ function ProductPage() {
         <span className="discount">-{product.discount}%</span>
         <p className="seller">Fornecedor: {product.seller}</p>
         <button className="buy-btn">Comprar 🛒</button>
-        <button className="cart-btn">Adicionar ao carrinho</button>
+         <button className="cart-btn"onClick={() => addToCart(product)}>Adicionar ao carrinho</button>
 
         <div className="frete">
           <p>Consultar Frete:</p>
