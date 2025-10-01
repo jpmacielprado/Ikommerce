@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import api from "../services/api";
 import axios from "axios";
 import "../components/ProductPage.css";
 import { Link } from "react-router-dom";
@@ -31,26 +30,25 @@ function ProductPage() {
 
   useEffect(() => {
     if (id) {
-      api
-        .get<Product>(`products/${id}`)
+      fetch(`http://localhost:3001/products/${id}`)
         .then((res) => {
-          const data: Product = res.data;
+          if (!res.ok) throw new Error("Erro ao buscar produto");
+          return res.json();
+        })
+        .then((data: Product) => {
           const formattedProduct = {
             ...data,
             displayPrice: new Intl.NumberFormat("pt-BR", {
               style: "currency",
               currency: "BRL",
             }).format(data.price),
-
             displayOldPrice: new Intl.NumberFormat("pt-BR", {
               style: "currency",
               currency: "BRL",
             }).format(data.oldPrice),
           };
           setProduct(formattedProduct);
-
-          // sempre começa pela capa
-          setSelectedImage(res.data.image);
+          setSelectedImage(data.image);
         })
         .catch(() => setProduct(null));
     }

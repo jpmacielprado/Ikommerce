@@ -10,6 +10,7 @@ import ProductPage from "./pages/ProductPage";
 import Footer from "./components/Footer";
 import CartPage from "./pages/CartPage";
 
+
 const App: React.FC = () => {
   return (
     <ErrorBoundary>

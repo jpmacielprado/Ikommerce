@@ -17,6 +17,21 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* Faz o conteúdo crescer e empurra o footer pra baixo */
+}
+
+footer {
+  background: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
 
 @keyframes logo-spin {
   from {
