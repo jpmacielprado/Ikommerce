@@ -13,7 +13,7 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     width: 800px;
-    max-width: 90%;
+    max-width: 100%;
 
 }
 
@@ -62,6 +62,7 @@
 .forgot-password {
     font-size: 14px;
     margin-top: 10px;
+    margin-left: 70px;
 }
 
 .forgot-password a {
@@ -109,6 +110,7 @@
     border-left: 3px solid red;
     margin-top: -20px;
     padding: 0;
+    
 }
 
 .microsoft-btn {
@@ -124,14 +126,14 @@
 .login-banner{
     flex: 1;
     background: #ff6600;
-
+    
 }
 .banner-content {
   display: flex;
   margin-top: 11.4rem;
   margin-left: 7.9vh;
   flex-direction: column;  
-  color: #000000;
+  color: #ffffff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -165,6 +167,7 @@
     width: 20px;
     height: 20px;
     margin-left: 65px;
+    
     
 }
 .google-btn h3{
