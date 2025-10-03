@@ -106,7 +106,9 @@
 }
 
 .google-btn {
-    border-left: 5px solid red;
+    border-left: 3px solid red;
+    margin-top: -20px;
+    padding: 0;
 }
 
 .microsoft-btn {
@@ -126,8 +128,8 @@
 }
 .banner-content {
   display: flex;
-  margin-top: 11rem;
-  margin-left: 10vh;
+  margin-top: 11.4rem;
+  margin-left: 7.9vh;
   flex-direction: column;  
   color: #000000;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -136,7 +138,8 @@
 .banner-content h2 {
   font-size: 28px;
   line-height: 1;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
+  margin-left: -10px;
 }
 
 .banner-content h2 span {
@@ -157,9 +160,23 @@
   align-self: flex-start; /* garante que não estique no flex */
 }
 
-.google{
+.google-btn img{
+    margin: none;
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: flex-;
+    margin-left: 65px;
+    
+}
+.google-btn h3{
+    margin-top: -20px;
+}
+.microsoft-btn img {
+    margin: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 65px;
+    
+}
+.microsoft-btn h3{
+    margin-top: -20px;
 }

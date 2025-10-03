@@ -58,8 +58,8 @@ const LoginForm: FC = () => {
           </div>
 
           <div className="social-login">
-            <button className="google-btn">🔴 Continuar com Google</button>
-            <button className="microsoft-btn">🔴 Continuar com Microsoft</button>
+            <button className="google-btn"><img src="/google.png" alt="" /> <h3>Continuar com Google </h3></button>
+            <button className="microsoft-btn"><img src="/microsoft.png" alt="" /><h3>Continuar com Microsoft</h3></button>
           </div>
 
           <p className="terms text-sm">
